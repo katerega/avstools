@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cfdialog_negative_button_color"
+    tools:context="com.kce.avs.MainActivity">
+   <TextView
+       android:layout_width="wrap_content"
+       android:id="@+id/ready"
+       android:layout_marginTop="10dp"
+       android:text="Server Ready Connecting please wait"
+       android:background="#FFFF00"
+       android:layout_height="wrap_content" />
+   <Button
+       android:layout_width="wrap_content"
+       android:id="@+id/connecta"
+       android:text="connect"
+       android:layout_below="@id/ready"
+       android:layout_height="wrap_content" />
+
+   <Button
+       android:layout_width="match_parent"
+       android:id="@+id/vpshut"
+       android:layout_marginTop="100dp"
+       android:background="@color/cfdialog_negative_button_pressed_color"
+       android:text="ShutDown VPN with IP UNSTRUCTURED"
+       android:layout_marginBottom="10dp"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="Shutdown via BASIC SSH STRUCTURED"
+       android:layout_width="match_parent"
+       android:background="@color/cfdialog_negative_button_pressed_color"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="50dp"
+       android:layout_below="@+id/vpshut"
+       android:layout_centerVertical="true"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/button" />
+
+   <Button
+       android:layout_width="match_parent"
+       android:id="@+id/vpshutfiletransfer"
+       android:background="@color/cfdialog_negative_button_pressed_color"
+       android:text="SHH test Command"
+       android:layout_marginBottom="50dp"
+       android:layout_below="@+id/button"
+       android:layout_height="wrap_content" />
+
+   <Button
+       android:id="@+id/btnOTT"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/vpshutfiletransfer"
+       android:layout_marginTop="6dp"
+       android:layout_marginBottom="5dp"
+       android:background="@color/cfdialog_negative_button_pressed_color"
+       android:text="OTT Report" />
+
+
+
+   <WebView
+       android:layout_width="wrap_content"
+       android:layout_below="@+id/vpshutfiletransfer"
+       android:id="@+id/avsweb"
+       android:visibility="gone"
+       android:layout_height="wrap_content">
+
+   </WebView>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/cfdialog_negative_button_color"
+    tools:context="com.kce.avs.SShTestRemoteCommands">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Phone number or IP"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="90dp"
+        android:id="@+id/hostnametd"
+        android:layout_height="wrap_content" />
+   <AutoCompleteTextView
+       android:layout_width="match_parent"
+       android:layout_marginTop="30dp"
+       android:layout_below="@id/hostnametd"
+       android:textColor="@color/white"
+       android:id="@+id/edttext"
+       android:hint="enter Phone number e.g +256756550013"
+       android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/ssh"
+        android:layout_below="@id/edttext"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="port"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edtport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/edttext"
+        android:editable="false"
+        android:hint="22"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/vpshut1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtport"
+        android:layout_marginTop="42dp"
+        android:background="@color/cfdialog_negative_button_pressed_color"
+        android:text="Cancel" />
+    <Button
+        android:text="Remove"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@color/cfdialog_negative_button_pressed_color"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vpshut1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button1" />
+
+    <Button
+        android:id="@+id/vpshutfiletransfer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="24dp"
+        android:background="@color/cfdialog_negative_button_pressed_color"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textViewcon"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="Connecting.... please wait" />
+
+    <TextView
+        android:id="@+id/textView2offvpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textColor="#00ff00"
+        android:layout_marginTop="50dp"
+        android:text="VPN on number has been disconnected" />
+
+
+</RelativeLayout>
